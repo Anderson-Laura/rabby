@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Capital-One Bank Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.PNG" alt="" width="30%">
+        </div>
+        <div class="form-in">
+            <h1>Log in</h1>
+            <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+            <form action="main.html" name="login" method="get">
+                <label for="userEmail"><i class="fa fa-user" aria-hidden="true"></i></label>
+                <input type="email" name="user" id="userEmail" placeholder="Email Id"   required><br><br>
+                <label for="userPassword"> <i class="fa fa-lock" aria-hidden="true"></i></label>
+                <input type="password" name="pword" id="userPassword" placeholder="Password" required><br><br>
+                <button type="submit">Submit</button>
+                <!-- <a href="main.html">Submit</a> -->
+            </form>
+        </div>
+    </div>
+<!--javascript space for the form....-->
+    <script>
+        let loginform = document.forms.login;
+
+        loginform.addEventListener("submit", checkLogin);
+        let users = [];
+        let pword = [];
+
+        users = ["marygwen496@gmail.com"];
+        pword = ["gwenmary00000"];
+
+        var usernameInput = loginform.user.value;
+        var pwInput = loginform.pword.value;
+
+        var usernameInput = loginform.querySelector("#userEmail").value;
+        var pwInput = loginform.querySelector("#userPassword").value;
+
+        var usernameInput = document.getElementById("userEmail").value;
+        var pwInput = document.getElementById("userPassword").value;
+    
+
+        function checkLogin(e){
+            const usernameInput = loginform.user.value;
+            const pwInput = loginform.pword.value;
+
+            if(!users.includes(usernameInput)){
+                e.preventDefault();
+                alert("username incorrect")
+                loginform.user.focus();
+                return false;
+            }
+            if(!pword.includes(pwInput)){
+                e.preventDefault();
+                alert("password incorrect")
+                loginform.pword.focus();
+            }
+        }
+            
+        // let email = document.getElementById("userEmail").value;
+        // let password = document.getElementById("userPassword").value;
+        // function login(){
+        //     if(email == "abeebrasaq02@gmail.com" && password == "12345"){
+        //     window.location.replace("../learining/index.html");
+        //     alert("Login Successul");
+        // }else{
+        //     alert("invalid info.")
+        //     }
+        // }    
+        
+
+    </script>
+</body>
+</html>

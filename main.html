@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <title>Capital One Bank</title>
+</head>
+<body>
+    <div class="container">
+        <!------First Content------->
+        <div class="sidenav" id="navlinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <div class="header">
+                <img src="logo2.PNG" alt="image" width="40%">
+            </div>
+            <div class="lists">
+                    <a href="main.html" class="menuList active">Dashboard</a>
+                    <a href="#" class="menuList">Card Payment</a>
+                    <a href="trans.html" class="menuList">Transaction History</a>
+                    <a href="setting.html" class="menuList">Settings</a>
+                    <a href="index.html" class="menuList">Logout</a>
+            </div>
+        </div>
+         <!------Middle content------->
+        <div class="content">
+            <div class="first-content">    
+                <h1><span>WELCOME, </span>GWEN MARY</h1>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </div>
+            <div class="second-content">
+                <div class="notes">
+                    <h3><b>Account Balance:</b></h3>
+                    <h1><img src="bank-icon-5983.png" alt="bank icon" width="45px"> $600,000</h1>
+                </div>
+                
+                <div class="button">
+                    <button type="button" id="button" onclick="openPopup()">Transfer</button>
+                </div>
+            </div>
+            <div class="popup" id="popup">
+                <img src="error.png" alt="thick-mark" class="img">
+                <h2>Declined</h2>
+                <h6>You will have to deposit before transfering any funds</h6>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            <div class="third-content">
+                <h1>Transaction History</h1>
+                <div class="table">
+                   <table>
+                        <tr>
+                            <th>Account Name</th>
+                            <th>Mode of Payment</th>
+                            <th>Credit/Debit</th>
+                            <th>Amount($)</th>
+                        </tr>
+                        <tr>
+                            <td>Williams John</td>
+                            <td>Paypal</td>
+                            <td class="green">Credit</td>
+                            <td><span class="green">$600,000.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Matthew J</td>
+                            <td>CashApp</td>
+                            <td class="red">Credit</td>
+                            <td class="red">$56,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Elizabeth Mary</td>
+                            <td>Zelle</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$109,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Johnson Tyler</td>
+                            <td>Zelle</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$300,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Robbin Gordon</td>
+                            <td>Paypal</td>
+                            <td class="green">Credit</td>
+                            <td><span>$50,000.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Jesse Eaton</td>
+                            <td>Paypal</td>
+                            <td class="green">Credit</td>
+                            <td><span>$700,000.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Brian Koller</td>
+                            <td>CashApp</td>
+                            <td class="green">Credit</td>
+                            <td><span>$10,000.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>John coke</td>
+                            <td>CashApp</td>
+                            <td class="green">Credit</td>
+                            <td><span>$100,000.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Brian Koller</td>
+                            <td>CashApp</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$100,000.00</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Elizabeth Mary</td>
+                            <td>CashApp</td>
+                            <td class="green">Credit</td>
+                            <td><span>$300,000.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Mary May</td>
+                            <td>Zelle</td>
+                            <td class="green">Credit</td>
+                            <td><span>$20,000.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Capra Guy</td>
+                            <td>Paypal</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$100,000.00</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Brian Coman</td>
+                            <td>CashApp</td>
+                            <td class="green">Credit</td>
+                            <td><span>$70,000.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Donald Roger</td>
+                            <td>CashApp</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$800,000.00</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Marcus Whiteman</td>
+                            <td>Paypal</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$90,000.00</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Brian Koller</td>
+                            <td>CashApp</td>
+                            <td class="green">Credit</td>
+                            <td><span>$10,000.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Robert David</td>
+                            <td>CashApp</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$300,000.00</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Howrad Jerry</td>
+                            <td>CashApp</td>
+                            <td class="green">Credit</td>
+                            <td><span>$1,000,000.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Jackie Larry</td>
+                            <td>CashApp</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$900,000.00</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+                <!-- <div class="button-table">
+                   <button>See More</button> 
+                </div> -->
+            <!-- </div> -->
+        </div>
+         <!------Last end content------->
+        <div class="sidenav-2">
+            <div class="images-settings">
+                <img src="message.png" alt="" width="40px">
+                <img src="Iohy.PNG" alt="" width="40px">
+                <img src="Icon.PNG" alt="" width="40px">
+            </div>
+            <div class="search-box">
+                <form action="#">
+                    <input type="search " name="" id="" placeholder="Transactions">
+                </form>
+            </div>
+            <div class="text-progress">
+                <h1>Transaction progress</h1>
+            </div>
+            <div class="progress-bar">
+                <div class="value">95%</div>
+            </div>
+            <div class="progress-notes">
+               <h1>Notifications</h1>
+               <div class="card-message">
+                    <div class="list-head">
+                        <div class="list">
+                            <div class="head">
+                                <h4>GWEN MARY</h4>
+                                <p>This is a new message for Gwen Mary</p>
+                            </div>
+                            <img src="1.PNG" alt="" width="20px" height="20px">
+                        </div>
+                        <div class="list">
+                            <div class="head">
+                                <h4>GWEN MARY</h4>
+                                <p>This is a new message for Gwen Mary</p>
+                            </div>
+                            <img src="1.PNG" alt="" width="20px" height="20px">
+                        </div>
+                        <div class="list">
+                            <div class="head">
+                                <h4>GWEN MARY</h4>
+                                <p>This is a new message for Gwen Mary</p>
+                            </div>
+                            <img src="1.PNG" alt="" width="20px" height="20px">
+                        </div>
+                        <div class="list">
+                            <div class="head">
+                                <h4>GWEN MARY</h4>
+                                <p>This is a new message for Gwen Mary</p>
+                            </div>
+                            <img src="1.PNG" alt="" width="20px" height="20px">
+                        </div>
+                    </div>
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--javascript placement here......-->
+    <script>
+         // -----------MenuLists------------
+        const menuLists = document.querySelectorAll(".menuList");
+
+        const changeActiveitem = () =>{
+            menuLists.forEach(item => {
+                item.classList.remove("active");
+            })
+        }
+
+        menuLists.forEach(item =>{
+            item.addEventListener("click", () =>{
+                changeActiveitem();
+                item.classList.add("active");
+            })
+        })
+                // ---------Popups----------
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+
+            var navlinks = document.getElementById("navlinks");
+            function showMenu(){
+                navlinks.style.right = "0";
+            }
+            function hideMenu(){
+                navlinks.style.right = "-220px";
+            }
+    </script>
+</body>
+</html>
