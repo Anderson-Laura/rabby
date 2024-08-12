@@ -6,23 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Capital-One Bank Login</title>
+    <title>WELLS FARGO LOGIN</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img src="logo.PNG" alt="" width="30%">
+            <h1>WELLS FARGO</h1>
+        </div>
+        <div class="greetings">
+            <h1>Good day!</h1>
+            <p>Sign on to manage your accounts</p>
         </div>
         <div class="form-in">
-            <h1>Log in</h1>
+            
             <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
             <form action="main.html" name="login" method="get">
                 <label for="userEmail"><i class="fa fa-user" aria-hidden="true"></i></label>
-                <input type="email" name="user" id="userEmail" placeholder="Email Id"   required><br><br>
+                <input type="email" name="user" id="userEmail" placeholder="User Email"   required><br><br>
                 <label for="userPassword"> <i class="fa fa-lock" aria-hidden="true"></i></label>
                 <input type="password" name="pword" id="userPassword" placeholder="Password" required><br><br>
                 <button type="submit">Submit</button>
                 <!-- <a href="main.html">Submit</a> -->
+                <p><a href="#">Forget username or password?</a></p>
             </form>
         </div>
     </div>
@@ -34,8 +39,8 @@
         let users = [];
         let pword = [];
 
-        users = ["marygwen496@gmail.com"];
-        pword = ["gwenmary00000"];
+        users = ["johnsummit246@gmail.com"];
+        pword = ["summitjohn01$"];
 
         var usernameInput = loginform.user.value;
         var pwInput = loginform.pword.value;

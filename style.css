@@ -2,50 +2,65 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "poppin" , sans-serif;
+    font-family: "poppins", sans-serif;
+    overflow-x: hidden;
     
 }
 .container{
     width: 100%;
     height: 100vh;
-    background-color: rgba(219, 218, 218, 0.671);
+    /* background-color: rgba(219, 218, 218, 0.671); */
+    background-image: url(fargo-balloons.jpg);
+    background-size: cover;
+    background-position: center;
     
 }
 .header{
     width: 100%;
-    height: 250px;
-    margin-bottom: 50px;
-    display: flex;
-    padding-top: 30px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 17, 250);
+    height: 50px;
+    background-color: rgba(255, 11, 11, 0.911);
+    border-bottom: 3px solid yellow;
+}
+.header h1{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.greetings{
+    margin-top: 30px;
+    text-align: center;
+    color: #000;
+    font-size: 23px;
+}
+.greetings h1{
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 .form-in{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 50px;
 }
 .form-in  h1{
     text-align: center;
     font-size: 50px;
     padding-bottom: 50px;
+    color: rgb(0, 0, 0);
 }
-.form-in form label{
+input::placeholder{
+    color: rgb(34, 34, 34);
     font-size: 20px;
-    font-weight: 600;
+    text-align: left;
 }
 .form-in form input{
     background: none;
+    width: 100vw;
     border: 0;
     border-bottom: 2px solid rgb(80, 76, 76);
     margin-left: 10px;
     outline: none;
+    padding: 20px 0px;
 }
 
 .form-in form  button{
-    width: 100%;
     padding: 10px 20px;
     font-size: 20px;
     margin: 20px 0;
@@ -54,9 +69,12 @@
     border: 0;
     outline: none;
     color: rgb(253, 253, 253); 
-    background-color: rgb(1, 39, 252);
+    background-color: rgb(190, 25, 25);
     cursor: pointer;
     transition: 2s all ease;
+}
+.form-in p {
+    text-align: center;
 }
 .fa{
     font-size: 25px;
@@ -66,9 +84,4 @@
     background-color: transparent;
     color: black;
     border: 1px solid black;
-}
-@media screen and (max-width: 700px) {
-    .header img{
-        width: 50%;
-    }
 }
